@@ -15,4 +15,9 @@
 #ifdef __OBJC__
 #import <UIKit/UIKit.h>
 #import <Foundation/Foundation.h>
+
+#warning 请修改为您在百度开发者平台申请的API_KEY和SECRET_KEY
+#define API_KEY @"" // 请修改为您在百度开发者平台申请的API_KEY
+#define SECRET_KEY @"" // 请修改您在百度开发者平台申请的SECRET_KEY
+
 #endif

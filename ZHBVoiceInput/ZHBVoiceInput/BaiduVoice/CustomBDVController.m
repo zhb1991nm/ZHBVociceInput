@@ -15,10 +15,6 @@
 #define _IMAGE_MIC_TALKING [UIImage imageNamed:@"mic_talk"]
 #define _IMAGE_MIC_WAVE [UIImage imageNamed:@"wave2"]
 
-#warning 请修改为您在百度开发者平台申请的API_KEY和SECRET_KEY
-#define API_KEY @"s15fmWSwXfgEnFwpZmXdjrsa" // 请修改为您在百度开发者平台申请的API_KEY
-#define SECRET_KEY @"xAPXvfca7Os7P7dsR6ArGei8t6oLLHkT" // 请修改您在百度开发者平台申请的SECRET_KEY
-
 #define VOICE_LEVEL_INTERVAL 0.1 // 音量监听频率为1秒中10次
 
 
