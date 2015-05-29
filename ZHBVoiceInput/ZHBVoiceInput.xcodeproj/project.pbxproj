@@ -1,0 +1,639 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B1B0E7E71B18231D0091B93C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B1B0E7E61B18231D0091B93C /* main.m */; };
+		B1B0E7EA1B18231D0091B93C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B1B0E7E91B18231D0091B93C /* AppDelegate.m */; };
+		B1B0E7ED1B18231D0091B93C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B1B0E7EC1B18231D0091B93C /* ViewController.m */; };
+		B1B0E7F01B18231D0091B93C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1B0E7EE1B18231D0091B93C /* Main.storyboard */; };
+		B1B0E7F21B18231D0091B93C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B1B0E7F11B18231D0091B93C /* Images.xcassets */; };
+		B1B0E7F51B18231D0091B93C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B1B0E7F31B18231D0091B93C /* LaunchScreen.xib */; };
+		B1B0E8011B18231D0091B93C /* ZHBVoiceInputTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B1B0E8001B18231D0091B93C /* ZHBVoiceInputTests.m */; };
+		B1B0E8C61B18251D0091B93C /* CustomBDVController.m in Sources */ = {isa = PBXBuildFile; fileRef = B1B0E89B1B18251D0091B93C /* CustomBDVController.m */; };
+		B1B0E8C71B18251D0091B93C /* libBDVoiceRecognitionClient.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B1B0E8A61B18251D0091B93C /* libBDVoiceRecognitionClient.a */; };
+		B1B0E8C81B18251D0091B93C /* mic_talk.png in Resources */ = {isa = PBXBuildFile; fileRef = B1B0E8A71B18251D0091B93C /* mic_talk.png */; };
+		B1B0E8C91B18251D0091B93C /* CADebugMacros.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B1B0E8AA1B18251D0091B93C /* CADebugMacros.cpp */; };
+		B1B0E8CA1B18251D0091B93C /* CAStreamBasicDescription.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B1B0E8AD1B18251D0091B93C /* CAStreamBasicDescription.cpp */; };
+		B1B0E8CB1B18251D0091B93C /* CAXException.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B1B0E8AF1B18251D0091B93C /* CAXException.cpp */; };
+		B1B0E8CC1B18251D0091B93C /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = B1B0E8B31B18251D0091B93C /* JSONKit.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B1B0E8CD1B18251D0091B93C /* wave.png in Resources */ = {isa = PBXBuildFile; fileRef = B1B0E8B41B18251D0091B93C /* wave.png */; };
+		B1B0E8CE1B18251D0091B93C /* wave2.png in Resources */ = {isa = PBXBuildFile; fileRef = B1B0E8B51B18251D0091B93C /* wave2.png */; };
+		B1B0E8D01B1825540091B93C /* BDVoiceRecognitionClientResources in Resources */ = {isa = PBXBuildFile; fileRef = B1B0E8CF1B1825540091B93C /* BDVoiceRecognitionClientResources */; };
+		B1B0E8D71B18284A0091B93C /* Toast+UIView.m in Sources */ = {isa = PBXBuildFile; fileRef = B1B0E8D61B18284A0091B93C /* Toast+UIView.m */; };
+		B1B0E8D91B182A1A0091B93C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1B0E8D81B182A1A0091B93C /* CoreGraphics.framework */; };
+		B1B0E8DB1B182A200091B93C /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1B0E8DA1B182A200091B93C /* CFNetwork.framework */; };
+		B1B0E8DD1B182A270091B93C /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1B0E8DC1B182A270091B93C /* CoreLocation.framework */; };
+		B1B0E8DF1B182A340091B93C /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1B0E8DE1B182A340091B93C /* OpenGLES.framework */; };
+		B1B0E8E11B182A3D0091B93C /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1B0E8E01B182A3D0091B93C /* GLKit.framework */; };
+		B1B0E8E31B182A440091B93C /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1B0E8E21B182A440091B93C /* CoreText.framework */; };
+		B1B0E8E51B182A4D0091B93C /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1B0E8E41B182A4D0091B93C /* QuartzCore.framework */; };
+		B1B0E8E71B182A540091B93C /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1B0E8E61B182A540091B93C /* Security.framework */; };
+		B1B0E8E91B182A5E0091B93C /* libz.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B1B0E8E81B182A5E0091B93C /* libz.1.dylib */; };
+		B1B0E8EB1B182A690091B93C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1B0E8EA1B182A690091B93C /* Foundation.framework */; };
+		B1B0E8ED1B182A700091B93C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1B0E8EC1B182A700091B93C /* UIKit.framework */; };
+		B1B0E8EF1B182A7B0091B93C /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1B0E8EE1B182A7B0091B93C /* AudioToolbox.framework */; };
+		B1B0E8F11B182A860091B93C /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1B0E8F01B182A860091B93C /* SystemConfiguration.framework */; };
+		B1B0E8F31B182A8D0091B93C /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1B0E8F21B182A8D0091B93C /* AVFoundation.framework */; };
+		B1B0E8F71B182AED0091B93C /* TTTAttributedLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = B1B0E8F61B182AED0091B93C /* TTTAttributedLabel.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B1B0E7FB1B18231D0091B93C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B1B0E7D91B18231D0091B93C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B1B0E7E01B18231D0091B93C;
+			remoteInfo = ZHBVoiceInput;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B1B0E7E11B18231D0091B93C /* ZHBVoiceInput.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZHBVoiceInput.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B1B0E7E51B18231D0091B93C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B1B0E7E61B18231D0091B93C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B1B0E7E81B18231D0091B93C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B1B0E7E91B18231D0091B93C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B1B0E7EB1B18231D0091B93C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		B1B0E7EC1B18231D0091B93C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		B1B0E7EF1B18231D0091B93C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B1B0E7F11B18231D0091B93C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		B1B0E7F41B18231D0091B93C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		B1B0E7FA1B18231D0091B93C /* ZHBVoiceInputTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZHBVoiceInputTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B1B0E7FF1B18231D0091B93C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B1B0E8001B18231D0091B93C /* ZHBVoiceInputTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHBVoiceInputTests.m; sourceTree = "<group>"; };
+		B1B0E89A1B18251D0091B93C /* CustomBDVController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomBDVController.h; sourceTree = "<group>"; };
+		B1B0E89B1B18251D0091B93C /* CustomBDVController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomBDVController.m; sourceTree = "<group>"; };
+		B1B0E89D1B18251D0091B93C /* BDRecognizerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDRecognizerViewController.h; sourceTree = "<group>"; };
+		B1B0E89E1B18251D0091B93C /* BDRecognizerViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDRecognizerViewDelegate.h; sourceTree = "<group>"; };
+		B1B0E89F1B18251D0091B93C /* BDRecognizerViewParamsObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDRecognizerViewParamsObject.h; sourceTree = "<group>"; };
+		B1B0E8A01B18251D0091B93C /* BDTheme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDTheme.h; sourceTree = "<group>"; };
+		B1B0E8A11B18251D0091B93C /* BDVoiceRecognitionClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDVoiceRecognitionClient.h; sourceTree = "<group>"; };
+		B1B0E8A21B18251D0091B93C /* BDVRDataUploader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDVRDataUploader.h; sourceTree = "<group>"; };
+		B1B0E8A31B18251D0091B93C /* BDVRFileRecognizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDVRFileRecognizer.h; sourceTree = "<group>"; };
+		B1B0E8A41B18251D0091B93C /* BDVRRawDataRecognizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDVRRawDataRecognizer.h; sourceTree = "<group>"; };
+		B1B0E8A51B18251D0091B93C /* BDVRUIPromptTextCustom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDVRUIPromptTextCustom.h; sourceTree = "<group>"; };
+		B1B0E8A61B18251D0091B93C /* libBDVoiceRecognitionClient.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libBDVoiceRecognitionClient.a; sourceTree = "<group>"; };
+		B1B0E8A71B18251D0091B93C /* mic_talk.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mic_talk.png; sourceTree = "<group>"; };
+		B1B0E8AA1B18251D0091B93C /* CADebugMacros.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CADebugMacros.cpp; sourceTree = "<group>"; };
+		B1B0E8AB1B18251D0091B93C /* CADebugMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CADebugMacros.h; sourceTree = "<group>"; };
+		B1B0E8AC1B18251D0091B93C /* CAMath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAMath.h; sourceTree = "<group>"; };
+		B1B0E8AD1B18251D0091B93C /* CAStreamBasicDescription.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CAStreamBasicDescription.cpp; sourceTree = "<group>"; };
+		B1B0E8AE1B18251D0091B93C /* CAStreamBasicDescription.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAStreamBasicDescription.h; sourceTree = "<group>"; };
+		B1B0E8AF1B18251D0091B93C /* CAXException.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CAXException.cpp; sourceTree = "<group>"; };
+		B1B0E8B01B18251D0091B93C /* CAXException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAXException.h; sourceTree = "<group>"; };
+		B1B0E8B21B18251D0091B93C /* JSONKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONKit.h; sourceTree = "<group>"; };
+		B1B0E8B31B18251D0091B93C /* JSONKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONKit.m; sourceTree = "<group>"; };
+		B1B0E8B41B18251D0091B93C /* wave.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wave.png; sourceTree = "<group>"; };
+		B1B0E8B51B18251D0091B93C /* wave2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wave2.png; sourceTree = "<group>"; };
+		B1B0E8CF1B1825540091B93C /* BDVoiceRecognitionClientResources */ = {isa = PBXFileReference; lastKnownFileType = folder; path = BDVoiceRecognitionClientResources; sourceTree = "<group>"; };
+		B1B0E8D11B1825B30091B93C /* ZHBVoiceInput-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ZHBVoiceInput-Prefix.pch"; sourceTree = "<group>"; };
+		B1B0E8D51B18284A0091B93C /* Toast+UIView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Toast+UIView.h"; sourceTree = "<group>"; };
+		B1B0E8D61B18284A0091B93C /* Toast+UIView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Toast+UIView.m"; sourceTree = "<group>"; };
+		B1B0E8D81B182A1A0091B93C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		B1B0E8DA1B182A200091B93C /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		B1B0E8DC1B182A270091B93C /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		B1B0E8DE1B182A340091B93C /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		B1B0E8E01B182A3D0091B93C /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		B1B0E8E21B182A440091B93C /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		B1B0E8E41B182A4D0091B93C /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		B1B0E8E61B182A540091B93C /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		B1B0E8E81B182A5E0091B93C /* libz.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.dylib; path = usr/lib/libz.1.dylib; sourceTree = SDKROOT; };
+		B1B0E8EA1B182A690091B93C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		B1B0E8EC1B182A700091B93C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		B1B0E8EE1B182A7B0091B93C /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		B1B0E8F01B182A860091B93C /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		B1B0E8F21B182A8D0091B93C /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		B1B0E8F51B182AED0091B93C /* TTTAttributedLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTTAttributedLabel.h; sourceTree = "<group>"; };
+		B1B0E8F61B182AED0091B93C /* TTTAttributedLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTTAttributedLabel.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B1B0E7DE1B18231D0091B93C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1B0E8F31B182A8D0091B93C /* AVFoundation.framework in Frameworks */,
+				B1B0E8F11B182A860091B93C /* SystemConfiguration.framework in Frameworks */,
+				B1B0E8EF1B182A7B0091B93C /* AudioToolbox.framework in Frameworks */,
+				B1B0E8ED1B182A700091B93C /* UIKit.framework in Frameworks */,
+				B1B0E8EB1B182A690091B93C /* Foundation.framework in Frameworks */,
+				B1B0E8E91B182A5E0091B93C /* libz.1.dylib in Frameworks */,
+				B1B0E8E71B182A540091B93C /* Security.framework in Frameworks */,
+				B1B0E8E51B182A4D0091B93C /* QuartzCore.framework in Frameworks */,
+				B1B0E8E31B182A440091B93C /* CoreText.framework in Frameworks */,
+				B1B0E8E11B182A3D0091B93C /* GLKit.framework in Frameworks */,
+				B1B0E8DF1B182A340091B93C /* OpenGLES.framework in Frameworks */,
+				B1B0E8DD1B182A270091B93C /* CoreLocation.framework in Frameworks */,
+				B1B0E8DB1B182A200091B93C /* CFNetwork.framework in Frameworks */,
+				B1B0E8D91B182A1A0091B93C /* CoreGraphics.framework in Frameworks */,
+				B1B0E8C71B18251D0091B93C /* libBDVoiceRecognitionClient.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B1B0E7F71B18231D0091B93C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B1B0E7D81B18231D0091B93C = {
+			isa = PBXGroup;
+			children = (
+				B1B0E8F21B182A8D0091B93C /* AVFoundation.framework */,
+				B1B0E8F01B182A860091B93C /* SystemConfiguration.framework */,
+				B1B0E8EE1B182A7B0091B93C /* AudioToolbox.framework */,
+				B1B0E8EC1B182A700091B93C /* UIKit.framework */,
+				B1B0E8EA1B182A690091B93C /* Foundation.framework */,
+				B1B0E8E81B182A5E0091B93C /* libz.1.dylib */,
+				B1B0E8E61B182A540091B93C /* Security.framework */,
+				B1B0E8E41B182A4D0091B93C /* QuartzCore.framework */,
+				B1B0E8E21B182A440091B93C /* CoreText.framework */,
+				B1B0E8E01B182A3D0091B93C /* GLKit.framework */,
+				B1B0E8DE1B182A340091B93C /* OpenGLES.framework */,
+				B1B0E8DC1B182A270091B93C /* CoreLocation.framework */,
+				B1B0E8DA1B182A200091B93C /* CFNetwork.framework */,
+				B1B0E8D81B182A1A0091B93C /* CoreGraphics.framework */,
+				B1B0E7E31B18231D0091B93C /* ZHBVoiceInput */,
+				B1B0E7FD1B18231D0091B93C /* ZHBVoiceInputTests */,
+				B1B0E7E21B18231D0091B93C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B1B0E7E21B18231D0091B93C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B1B0E7E11B18231D0091B93C /* ZHBVoiceInput.app */,
+				B1B0E7FA1B18231D0091B93C /* ZHBVoiceInputTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B1B0E7E31B18231D0091B93C /* ZHBVoiceInput */ = {
+			isa = PBXGroup;
+			children = (
+				B1B0E8D41B18284A0091B93C /* Toast */,
+				B1B0E8851B18251D0091B93C /* BaiduVoice */,
+				B1B0E7E81B18231D0091B93C /* AppDelegate.h */,
+				B1B0E7E91B18231D0091B93C /* AppDelegate.m */,
+				B1B0E7EB1B18231D0091B93C /* ViewController.h */,
+				B1B0E7EC1B18231D0091B93C /* ViewController.m */,
+				B1B0E7EE1B18231D0091B93C /* Main.storyboard */,
+				B1B0E7F11B18231D0091B93C /* Images.xcassets */,
+				B1B0E7F31B18231D0091B93C /* LaunchScreen.xib */,
+				B1B0E7E41B18231D0091B93C /* Supporting Files */,
+			);
+			path = ZHBVoiceInput;
+			sourceTree = "<group>";
+		};
+		B1B0E7E41B18231D0091B93C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B1B0E7E51B18231D0091B93C /* Info.plist */,
+				B1B0E7E61B18231D0091B93C /* main.m */,
+				B1B0E8D11B1825B30091B93C /* ZHBVoiceInput-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B1B0E7FD1B18231D0091B93C /* ZHBVoiceInputTests */ = {
+			isa = PBXGroup;
+			children = (
+				B1B0E8001B18231D0091B93C /* ZHBVoiceInputTests.m */,
+				B1B0E7FE1B18231D0091B93C /* Supporting Files */,
+			);
+			path = ZHBVoiceInputTests;
+			sourceTree = "<group>";
+		};
+		B1B0E7FE1B18231D0091B93C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B1B0E7FF1B18231D0091B93C /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B1B0E8851B18251D0091B93C /* BaiduVoice */ = {
+			isa = PBXGroup;
+			children = (
+				B1B0E8CF1B1825540091B93C /* BDVoiceRecognitionClientResources */,
+				B1B0E89A1B18251D0091B93C /* CustomBDVController.h */,
+				B1B0E89B1B18251D0091B93C /* CustomBDVController.m */,
+				B1B0E89C1B18251D0091B93C /* Headers */,
+				B1B0E8A61B18251D0091B93C /* libBDVoiceRecognitionClient.a */,
+				B1B0E8A71B18251D0091B93C /* mic_talk.png */,
+				B1B0E8A81B18251D0091B93C /* Third-party */,
+				B1B0E8B41B18251D0091B93C /* wave.png */,
+				B1B0E8B51B18251D0091B93C /* wave2.png */,
+			);
+			path = BaiduVoice;
+			sourceTree = "<group>";
+		};
+		B1B0E89C1B18251D0091B93C /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				B1B0E89D1B18251D0091B93C /* BDRecognizerViewController.h */,
+				B1B0E89E1B18251D0091B93C /* BDRecognizerViewDelegate.h */,
+				B1B0E89F1B18251D0091B93C /* BDRecognizerViewParamsObject.h */,
+				B1B0E8A01B18251D0091B93C /* BDTheme.h */,
+				B1B0E8A11B18251D0091B93C /* BDVoiceRecognitionClient.h */,
+				B1B0E8A21B18251D0091B93C /* BDVRDataUploader.h */,
+				B1B0E8A31B18251D0091B93C /* BDVRFileRecognizer.h */,
+				B1B0E8A41B18251D0091B93C /* BDVRRawDataRecognizer.h */,
+				B1B0E8A51B18251D0091B93C /* BDVRUIPromptTextCustom.h */,
+			);
+			path = Headers;
+			sourceTree = "<group>";
+		};
+		B1B0E8A81B18251D0091B93C /* Third-party */ = {
+			isa = PBXGroup;
+			children = (
+				B1B0E8F41B182AED0091B93C /* TTTAtributedLabel */,
+				B1B0E8A91B18251D0091B93C /* CoreAudioUtility */,
+				B1B0E8B11B18251D0091B93C /* JSONKit-master */,
+			);
+			path = "Third-party";
+			sourceTree = "<group>";
+		};
+		B1B0E8A91B18251D0091B93C /* CoreAudioUtility */ = {
+			isa = PBXGroup;
+			children = (
+				B1B0E8AA1B18251D0091B93C /* CADebugMacros.cpp */,
+				B1B0E8AB1B18251D0091B93C /* CADebugMacros.h */,
+				B1B0E8AC1B18251D0091B93C /* CAMath.h */,
+				B1B0E8AD1B18251D0091B93C /* CAStreamBasicDescription.cpp */,
+				B1B0E8AE1B18251D0091B93C /* CAStreamBasicDescription.h */,
+				B1B0E8AF1B18251D0091B93C /* CAXException.cpp */,
+				B1B0E8B01B18251D0091B93C /* CAXException.h */,
+			);
+			path = CoreAudioUtility;
+			sourceTree = "<group>";
+		};
+		B1B0E8B11B18251D0091B93C /* JSONKit-master */ = {
+			isa = PBXGroup;
+			children = (
+				B1B0E8B21B18251D0091B93C /* JSONKit.h */,
+				B1B0E8B31B18251D0091B93C /* JSONKit.m */,
+			);
+			path = "JSONKit-master";
+			sourceTree = "<group>";
+		};
+		B1B0E8D41B18284A0091B93C /* Toast */ = {
+			isa = PBXGroup;
+			children = (
+				B1B0E8D51B18284A0091B93C /* Toast+UIView.h */,
+				B1B0E8D61B18284A0091B93C /* Toast+UIView.m */,
+			);
+			path = Toast;
+			sourceTree = "<group>";
+		};
+		B1B0E8F41B182AED0091B93C /* TTTAtributedLabel */ = {
+			isa = PBXGroup;
+			children = (
+				B1B0E8F51B182AED0091B93C /* TTTAttributedLabel.h */,
+				B1B0E8F61B182AED0091B93C /* TTTAttributedLabel.m */,
+			);
+			path = TTTAtributedLabel;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B1B0E7E01B18231D0091B93C /* ZHBVoiceInput */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B1B0E8041B18231D0091B93C /* Build configuration list for PBXNativeTarget "ZHBVoiceInput" */;
+			buildPhases = (
+				B1B0E7DD1B18231D0091B93C /* Sources */,
+				B1B0E7DE1B18231D0091B93C /* Frameworks */,
+				B1B0E7DF1B18231D0091B93C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ZHBVoiceInput;
+			productName = ZHBVoiceInput;
+			productReference = B1B0E7E11B18231D0091B93C /* ZHBVoiceInput.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B1B0E7F91B18231D0091B93C /* ZHBVoiceInputTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B1B0E8071B18231D0091B93C /* Build configuration list for PBXNativeTarget "ZHBVoiceInputTests" */;
+			buildPhases = (
+				B1B0E7F61B18231D0091B93C /* Sources */,
+				B1B0E7F71B18231D0091B93C /* Frameworks */,
+				B1B0E7F81B18231D0091B93C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B1B0E7FC1B18231D0091B93C /* PBXTargetDependency */,
+			);
+			name = ZHBVoiceInputTests;
+			productName = ZHBVoiceInputTests;
+			productReference = B1B0E7FA1B18231D0091B93C /* ZHBVoiceInputTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B1B0E7D91B18231D0091B93C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = sinitek;
+				TargetAttributes = {
+					B1B0E7E01B18231D0091B93C = {
+						CreatedOnToolsVersion = 6.3;
+					};
+					B1B0E7F91B18231D0091B93C = {
+						CreatedOnToolsVersion = 6.3;
+						TestTargetID = B1B0E7E01B18231D0091B93C;
+					};
+				};
+			};
+			buildConfigurationList = B1B0E7DC1B18231D0091B93C /* Build configuration list for PBXProject "ZHBVoiceInput" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B1B0E7D81B18231D0091B93C;
+			productRefGroup = B1B0E7E21B18231D0091B93C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B1B0E7E01B18231D0091B93C /* ZHBVoiceInput */,
+				B1B0E7F91B18231D0091B93C /* ZHBVoiceInputTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B1B0E7DF1B18231D0091B93C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1B0E8C81B18251D0091B93C /* mic_talk.png in Resources */,
+				B1B0E8D01B1825540091B93C /* BDVoiceRecognitionClientResources in Resources */,
+				B1B0E8CE1B18251D0091B93C /* wave2.png in Resources */,
+				B1B0E7F01B18231D0091B93C /* Main.storyboard in Resources */,
+				B1B0E8CD1B18251D0091B93C /* wave.png in Resources */,
+				B1B0E7F51B18231D0091B93C /* LaunchScreen.xib in Resources */,
+				B1B0E7F21B18231D0091B93C /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B1B0E7F81B18231D0091B93C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B1B0E7DD1B18231D0091B93C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1B0E7ED1B18231D0091B93C /* ViewController.m in Sources */,
+				B1B0E7EA1B18231D0091B93C /* AppDelegate.m in Sources */,
+				B1B0E8CC1B18251D0091B93C /* JSONKit.m in Sources */,
+				B1B0E7E71B18231D0091B93C /* main.m in Sources */,
+				B1B0E8C61B18251D0091B93C /* CustomBDVController.m in Sources */,
+				B1B0E8CB1B18251D0091B93C /* CAXException.cpp in Sources */,
+				B1B0E8D71B18284A0091B93C /* Toast+UIView.m in Sources */,
+				B1B0E8C91B18251D0091B93C /* CADebugMacros.cpp in Sources */,
+				B1B0E8CA1B18251D0091B93C /* CAStreamBasicDescription.cpp in Sources */,
+				B1B0E8F71B182AED0091B93C /* TTTAttributedLabel.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B1B0E7F61B18231D0091B93C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1B0E8011B18231D0091B93C /* ZHBVoiceInputTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B1B0E7FC1B18231D0091B93C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B1B0E7E01B18231D0091B93C /* ZHBVoiceInput */;
+			targetProxy = B1B0E7FB1B18231D0091B93C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B1B0E7EE1B18231D0091B93C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B1B0E7EF1B18231D0091B93C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B1B0E7F31B18231D0091B93C /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B1B0E7F41B18231D0091B93C /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B1B0E8021B18231D0091B93C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		B1B0E8031B18231D0091B93C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B1B0E8051B18231D0091B93C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = "ZHBVoiceInput/ZHBVoiceInput-Prefix.pch";
+				INFOPLIST_FILE = ZHBVoiceInput/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ZHBVoiceInput/BaiduVoice",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		B1B0E8061B18231D0091B93C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = "ZHBVoiceInput/ZHBVoiceInput-Prefix.pch";
+				INFOPLIST_FILE = ZHBVoiceInput/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ZHBVoiceInput/BaiduVoice",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		B1B0E8081B18231D0091B93C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = ZHBVoiceInputTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZHBVoiceInput.app/ZHBVoiceInput";
+			};
+			name = Debug;
+		};
+		B1B0E8091B18231D0091B93C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = ZHBVoiceInputTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZHBVoiceInput.app/ZHBVoiceInput";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B1B0E7DC1B18231D0091B93C /* Build configuration list for PBXProject "ZHBVoiceInput" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B1B0E8021B18231D0091B93C /* Debug */,
+				B1B0E8031B18231D0091B93C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B1B0E8041B18231D0091B93C /* Build configuration list for PBXNativeTarget "ZHBVoiceInput" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B1B0E8051B18231D0091B93C /* Debug */,
+				B1B0E8061B18231D0091B93C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		B1B0E8071B18231D0091B93C /* Build configuration list for PBXNativeTarget "ZHBVoiceInputTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B1B0E8081B18231D0091B93C /* Debug */,
+				B1B0E8091B18231D0091B93C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B1B0E7D91B18231D0091B93C /* Project object */;
+}
